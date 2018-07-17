@@ -55,6 +55,8 @@ class Home extends Component {
   }
 
   login = () => {
+    console.log('in login');
+    console.log('login "this": '+this);
     this.props.auth.login();
   }
 
@@ -123,7 +125,7 @@ class Home extends Component {
         }
         {
           !isAuthenticated() && (
-              <p></p>
+              <p>HEYYYY</p>
             )
         }
       </div>
